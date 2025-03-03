@@ -42,7 +42,7 @@ namespace Photon.Pun.UserInterfaces
 
         public override void OnJoinedRoom()
         {
-            PanelManager.Instance.ShowPanelFromResource<JoinedRoomController>(UIName.JOINED_ROOM_UI);
+            PanelManager.Instance.ShowPanelFromResources<JoinedRoomController>(UIName.JOINED_ROOM_UI);
         }
     }
 }

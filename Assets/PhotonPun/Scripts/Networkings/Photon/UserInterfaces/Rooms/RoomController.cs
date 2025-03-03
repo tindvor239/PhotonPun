@@ -29,7 +29,7 @@ namespace Photon.Pun.UserInterfaces
         public override void OnCreatedRoom()
         {
             DebugExtend.Log("Created Room Successully", Color.green);
-            PanelManager.Instance.ShowPanelFromResource<JoinedRoomController>(UIName.JOINED_ROOM_UI);
+            PanelManager.Instance.ShowPanelFromResources<JoinedRoomController>(UIName.JOINED_ROOM_UI);
             Hide();
         }
 

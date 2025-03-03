@@ -30,7 +30,7 @@ namespace Photon.Pun.UserInterfaces
         {
             PhotonNetwork.LeaveRoom();
             Hide();
-            PanelManager.Instance.ShowPanelFromResource<RoomController>(UIName.ROOM_UI);
+            PanelManager.Instance.ShowPanelFromResources<RoomController>(UIName.ROOM_UI);
         }
 
         private void OnStartGame()

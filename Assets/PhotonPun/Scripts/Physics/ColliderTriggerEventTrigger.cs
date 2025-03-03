@@ -20,6 +20,7 @@ public sealed class ColliderTriggerEventTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _onTriggerEnter?.Invoke(other);
+        Debug.Log("OnTriggerEnter");
     }
 
     private void OnTriggerExit(Collider other)

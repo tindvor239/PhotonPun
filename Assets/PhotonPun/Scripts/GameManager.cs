@@ -12,7 +12,7 @@ public class GameManager : PersistentSingleton<GameManager>
 
     private void Start()
     {
-        PanelManager.Instance.ShowPanelFromResource<RoomController>(UIName.ROOM_UI);
+        PanelManager.Instance.ShowPanelFromResources<RoomController>(UIName.ROOM_UI);
     }
 
     public static GameObject NetworkInstantiate(GameObject obj, Vector3 position, Quaternion rotation)

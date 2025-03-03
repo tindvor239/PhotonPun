@@ -11,7 +11,7 @@ namespace SimpleUI
         private const string RESOURCES_PATH = "UserInterfaces/";
         private Dictionary<string, IUserInterfaceControllable> _panelDictionary = new();
 
-        public T ShowPanelFromResource<T>(string panelId, Action onShownCallBack = null) where T : MonoBehaviour, IUserInterfaceControllable
+        public T ShowPanelFromResources<T>(string panelId, Action onShownCallBack = null) where T : MonoBehaviour, IUserInterfaceControllable
         {
             if (_panelDictionary.TryGetValue(panelId, out IUserInterfaceControllable p))
             {

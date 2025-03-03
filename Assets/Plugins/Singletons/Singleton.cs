@@ -54,10 +54,6 @@ namespace Singletons
             {
                 _instance = this as T;
             }
-            else
-            {
-                Destroy(gameObject);
-            }
         }
     }
 }
