@@ -18,7 +18,8 @@ namespace Photon.Pun.Interfaces
 
         private void OnDestroy()
         {
-            Destroy(textName.gameObject);
+            if (textName != null)
+                Destroy(textName.gameObject);
         }
 
         private void Update()

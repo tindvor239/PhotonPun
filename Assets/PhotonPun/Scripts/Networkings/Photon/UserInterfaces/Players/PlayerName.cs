@@ -4,6 +4,7 @@ namespace Photon.Pun.Interfaces
     {
         protected override void Awake()
         {
+            base.Awake();
             textName.text = photonView.Owner.NickName;
         }
     }
